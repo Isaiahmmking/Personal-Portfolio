@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Personal Profile/Link-Me-IMG"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Link-me-In",
+		"liveServer.settings.port": 5501
+	}
+}

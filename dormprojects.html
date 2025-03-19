@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm Projects</title>
+    <link rel="stylesheet" href="style-dormprojects.css">
+    <script src="https://kit.fontawesome.com/e380383ac6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="Images/Logo.png" class="logo"> 
+               <ul id="sidemenu"> 
+                    <li><a href="index.html">// Home</a></li>
+                    <li><a href="#Dorm-1">// Dormbell</a></li>
+                    <li><a href="#Dorm-2">// Door Opener</a></li>
+                    <li><a href="#Dorm-3">// Gallery</a></li>
+                    <li><a href="#contact">// Web Projects</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Dorm Projects</h1> 
+                <p>This is a collection of my current personal projects </p>
+            </div> 
+        </div>
+     </div>
+</body>
+
+
+
+<!------------------ Different Projects -->
+
+
+
+
+
+<!----------------- Project 1 ---------------->
+<div id="Dorm-1">
+    <div class="container">
+        <div class="row">
+          <div class="Dorm-1-col-1">
+             <img src="Images/Dormbell.png"> <!----add image here--  --> 
+          </div>
+        <div class="Dorm-1-col-2">
+                  <h1 class="sub-title">Dormbell</h1><!------- name of project -->
+                  <p> I love having guests over, to make sure these guests don't catch me by surprise, I built a "dormbell" that plays clips from randomly selected songs when pressed! </p>
+                <div class="tab-titles">
+                    <p class="tab-links-p1 active-link-p1" onclick="opentab('function-p1', 1)">How it works</p>
+                    <p class="tab-links-p1" onclick="opentab('skills-p1', 1)">Skills</p>
+                    <p class="tab-links-p1" onclick="opentab('improvements-p1', 1)"> Improvements</p>
+                    
+                </div>
+                <div class="tab-contents-p1 active-tab-p1" id="function-p1">
+                    <ul>
+                        <li><span>Arduino IDE code</span><br>I used an Arduino UNO and added code that output the correct pitches in the correct order</li>
+                        <li><span>Music selection</span><br>This code randomly selected one of five manually uploaded songs and played them through a buzzer</li>
+                        <li><span>Pitches</span><br>To ensure each song was correct, I created a function that held the correct pitches and then recalled the function when needed</li>
+                    </ul>
+                </div>
+                <div class="tab-contents-p1" id="skills-p1">
+                    <ul>
+                        <li><span>Arduino IDE</span><br> This project used an Arduino UNO and C++</li>
+                        <li><span>Circutry</span><br> To prevent any damage to the Arduino, I had to ensure my circut was not under too much voltage which took trial and error</li>
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents-p1" id="improvements-p1">
+                    <ul>
+                       <li><span>Code</span><br>If I were to remake this project, I would try to simplify the code as I believe there is many parts that can be simplified</li>
+                       <li><span>Output</span><br>I plan to rebuild this project, and instead replace the piazza buzzer with stepper motors to create a better pitch output</li>                     
+                    </ul>    
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-------------------------- Project 2 ---------------------------->
+
+<div id="Dorm-2">
+    <div class="container">
+        <div class="row">
+          <div class="Dorm-2-col-1">
+
+            <h1 class="sub-title">Door Opener</h1>
+            <p> When I first moved into my dorm, it took some time to get used to the automatic locking mechanism on my door and I would frequently lock myself out,
+               so, I built a keypad-activated unlocking system for the next time I locked myself out </p>
+          <div class="tab-titles">
+              <p class="tab-links-p2 active-link-p2" onclick="opentab('function-p2', 2)">How it works</p>
+              <p class="tab-links-p2" onclick="opentab('skills-p2', 2)">Skills</p>
+              <p class="tab-links-p2" onclick="opentab('improvements-p2', 2)"> Improvements</p>
+          </div>
+          <div class="tab-contents-p2 active-tab-p2" id="function-p2">
+              <ul>
+                  <li><span>Arduino IDE code</span><br>I used an Arduino UNO and added code that would start a motor when it detected the correct keypad input</li>
+                  <li><span>Motor</span><br> I modeled a two-way gear train that would push up the door handle from the inside, allowing me to open the door</li>
+              </ul>
+          </div>
+          <div class="tab-contents-p2" id="skills-p2">
+              <ul>
+                  <li><span>Arduino IDE</span><br> This project used an Arduino UNO and C++</li>
+                  <li><span>CAD</span><br> I used cad to create a physical device to open the door</li>
+                  <li><span>Circutry</span><br> I had to wire the keypad, motors and opener and connect everything from inside and outside my door</li>
+              </ul>
+          </div>
+              
+          <div class="tab-contents-p2" id="improvements-p2">
+              <ul>
+                 <li><span>CAD</span><br>If I were to remake this project, I would try to remodel the door mechanism, as it is annoying to move out of the way when normally opening the door</li>
+                               
+              </ul>    
+          </div>
+          </div>
+
+
+        <div class="Dorm-2-col-2">
+            <img src="Images/fusionlogo.png"> 
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+<!-------------------------- Project 3 ---------------------------->
+
+<div id="Dorm-3">
+    <div class="container">
+        <div class="row">
+          <div class="Dorm-3-col-1">
+             <img src="Images/bubblz.jpg"> <!----add image here-- --> 
+          </div>
+        <div class="Dorm-3-col-2">
+                  <h1 class="sub-title">Photo Gallery</h1><!------- name of project -->
+                  <p> I love taking photos of the places I visit so I can share them with my friends and family, So to hold more photos I created a photo gallery to remember the different things i have seen! </p>
+                <div class="tab-titles">
+                    <p class="tab-links-p3 active-link-p3" onclick="opentab('function-p3', 3)">How it works</p>
+                    <p class="tab-links-p3" onclick="opentab('skills-p3', 3)">Skills</p>
+                    <p class="tab-links-p3" onclick="opentab('improvements-p3', 3)"> Improvements</p>
+                    
+                </div>
+                <div class="tab-contents-p3 active-tab-p3" id="function-p3">
+                    <ul>
+                        <li><span>HTML / CSS / JS</span><br> I used Javascript, HTML and CSS to create this gallery </li>
+                    </ul>
+                </div>
+                <div class="tab-contents-p3" id="skills-p3">
+                    <ul>
+                        <li><span>Javascript</span><br> To create the sliding menu I used Javascript and displayed the images with HTML and CSS</li>
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents-p3" id="improvements-p3">
+                    <ul>
+                       <li><span>Code</span><br>If I were to remake this project, I would try to improve the Javascript code as the sliding mechanism is not as smooth as I would like</li>
+                       <li><span>Output</span><br>I plan to frequently add pictures to this project I can see all my favorite photos in one spot. you can see an up to date track of my progress
+                     <a href="photogallery.html"> here!</a></li>                     
+                    </ul>    
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<script>
+   // code for projects display and animation
+function opentab(tabName, project) {
+  var tabContents, tabLinks;
+
+  switch (project) {
+    case 1:
+      tabContents = document.querySelectorAll('.tab-contents-p1');
+      tabLinks = document.querySelectorAll('.tab-links-p1');
+      break;
+    case 2:
+      tabContents = document.querySelectorAll('.tab-contents-p2');
+      tabLinks = document.querySelectorAll('.tab-links-p2');
+      break;
+    case 3:
+      tabContents = document.querySelectorAll('.tab-contents-p3');
+      tabLinks = document.querySelectorAll('.tab-links-p3');
+      break;
+  }
+
+  tabContents.forEach(function(content) {
+    content.style.display = 'none';
+  });
+  tabLinks.forEach(function(link) {
+    link.classList.remove('active-link-p' + project);
+  });
+
+  var selectedContent = document.getElementById(tabName);
+  selectedContent.style.display = 'block';
+  var selectedLink = document.querySelector('.tab-links-p' + project + '[onclick="opentab(\'' + tabName + '\', ' + project + ')"]');
+  selectedLink.classList.add('active-link-p' + project);
+}
+   
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</html>

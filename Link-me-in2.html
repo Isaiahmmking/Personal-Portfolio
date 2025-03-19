@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-Me-In</title>
+    <link rel="stylesheet" href="Link-me-inMAIN.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="Link-me-inMain.html" class="logo"><img src="Linked-Images/logo copy.png" alt="Linkedin Logo"></a>
+
+            <div class="search-box">
+                <img src="Linked-Images/search.png" alt="Search Icon">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="Linked-Images/home.png" alt="Home Icon"> <span>Home</span></a></li>
+                <li><a href="#"><img src="Linked-Images/network.png" alt="Network Icon"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="Linked-Images/jobs.png" alt="Jobs Icon"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="Linked-Images/message.png" alt="Messaging Icon"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="Linked-Images/notification.png" alt="Notifications Icon"> <span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="Linked-Images/User-1.png" class="nav-profile-img" alt="User Profile 1" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!------------ Profile Drop Down Menu ------------>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="Linked-Images/User-1.png" alt="user-1">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="./Link-me-inMain.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/feedback.png" alt="Feedback Icon">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/setting.png" alt="Settings Icon">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/help.png" alt="Help Icon">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/display.png" alt="Display Icon">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/logout.png" alt="Logout Icon">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!------------ Navbar Close ------------> 
+    <div class="container">
+        <!------------ Left Sidebar ------------> 
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="Linked-Images/Black Minimalist Motivation Quote LinkedIn Banner.png" alt="Cover Pic" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="Linked-Images/User-1.png" alt="User One">
+                    <h1>John Doe</h1>
+                    <h3>Buisness owner</h3>
+                    <ul>
+                        <li>Your profile views<span>52</span></li>
+                        <li>Your post views<span>810</span></li>
+                        <li>Your connections<span>205</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="Linked-Images/items.png" alt="Item Icon">My items</a>
+                    <a href="#"><img src="Linked-Images/premium.png" alt="Premium Icon">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="Linked-Images/recent.png" alt="Recent Activities"> Web Development</a>
+                <a href="#"><img src="Linked-Images/recent.png" alt="Recent Activities"> User Interface</a>
+                <a href="#"><img src="Linked-Images/recent.png" alt="Recent Activities"> Online Learning</a>
+                <a href="#"><img src="Linked-Images/recent.png" alt="Recent Activities"> Learn Online</a>
+                <a href="#"><img src="Linked-Images/recent.png" alt="Recent Activities"> Code Better</a>
+                <a href="#"><img src="Linked-Images/recent.png" alt="Recent Activities"> Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="Linked-Images/group.png" alt="Group"> Web Design Group</a>
+                <a href="#"><img src="Linked-Images/group.png" alt="Group"> HTML & CSS Learners</a>
+                <a href="#"><img src="Linked-Images/group.png" alt="Group"> Python % JavaScript Group</a>
+                <a href="#"><img src="Linked-Images/group.png" alt="Group"> Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="Linked-Images/hashtag.png" alt="Group"> webdevelopment</a>
+                <a href="#"><img src="Linked-Images/hashtag.png" alt="Group"> userinterface</a>
+                <a href="#"><img src="Linked-Images/hashtag.png" alt="Group"> onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+        <!------------ Main Content ------------>
+
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="Linked-Images/User-1.png" alt="user-1">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="Linked-Images/photo.png" alt="Photo Icon">Photo</li>
+                    <li><img src="Linked-Images/video.png" alt="Video Icon">Video</li>
+                    <li><img src="Linked-Images/event.png" alt="Photo Icon">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="Linked-Images/down-arrow.png" alt="Arrow Pointing Down"></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="Linked-Images/profesional.png"user-3">
+                    <div>
+                        <h1>Isaiah King</h1>
+                        <small>Student Engineer at Simon Fraser University</small>
+                        <small>6 hours ago</small>
+                    </div>
+                </div>
+                <p> I'm proud to announce my band has released a new single, check it out now! </p>
+                <video controls autoplay muted src="Linked-Images/Subsanity.mov" width="100%" alt="Post video 1"></video>
+                <div class="post-stats">
+                    <div>
+                        <img src="Linked-Images/thumbsup.png">
+                        <img src="Linked-Images/love.png">
+                        <img src="Linked-Images/clap.png">
+                        <span class="liked-users">multiple others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="Linked-Images/User-1.png" class="post-activity-user-icon" alt="Post Activity Icon">
+                        <img src="Linked-Images/down-arrow.png" class="post-activity-arrow-icon" alt="Post Activity Icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/like.png" alt="Comment Icon">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/comment.png" alt="Comment Icon">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/comment.png" alt="Comment Icon">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/send.png" alt="Comment Icon">
+                        <span>Send</span>
+                    </div>
+                </div> 
+            </div> 
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="Linked-Images/profesional.png" alt="user-4">
+                    <div>
+                        <h1>Isaiah King</h1>
+                        <small>Student Engineer at Simon Fraser University</small>
+                        <small> Yesterday </small>
+                    </div>
+                </div>
+                <p> Can you guess what my next project is? here's a hint!</p>
+                <img src="Linked-Images/Dormbell.png" width="100%" alt="Post Imgae 2">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="Linked-Images/thumbsup.png">
+                        <img src="Linked-Images/like.png">
+                        <img src="Linked-Images/clap.png">
+                        <span class="liked-users">Friends and 24 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="Linked-Images/User-2.png" class="post-activity-user-icon" alt="Post Activity Icon">
+                        <img src="Linked-Images/down-arrow.png" class="post-activity-arrow-icon" alt="Post Activity Icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/like.png" alt="Comment Icon">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/comment.png" alt="Comment Icon">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/share.png" alt="Comment Icon">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/send.png" alt="Comment Icon">
+                        <span>Send</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="Linked-Images/profesional.png" alt="user-3">
+                    <div>
+                        <h1>Isaiah King</h1>
+                        <small>Student Engineer at Simon Fraser University</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p> We all have loved ones to worry about but we can't always be there to help them, but my new invention can help, I call it the I-Fallen</p>
+                <video controls autoplay muted loop src="Linked-Images/i've fallen.mov" width="100%" alt="Post Video 3"></video>
+
+                <div class="post-stats">
+                    <div>
+                        <img src="Linked-Images/thumbsup.png">
+                        <img src="Linked-Images/love.png">
+                        <img src="Linked-Images/clap.png">
+                        <span class="liked-users"> 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="Linked-Images/User-3.png" class="post-activity-user-icon" alt="Post Activity Icon">
+                        <img src="Linked-Images/down-arrow.png" class="post-activity-arrow-icon" alt="Post Activity Icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/like.png" alt="Comment Icon">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/comment.png" alt="Comment Icon">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/share.png" alt="Comment Icon">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/send.png" alt="Comment Icon">
+                        <span>Send</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="Linked-Images/profesional.png" alt="user-3">
+                    <div>
+                        <h1>Isaiah King</h1>
+                        <small> Student Engineer at Simon Fraser University</small>
+                        <small>3 days ago</small>
+                    </div>
+                </div>
+                <p> For those who can make it here is the setlist for music night preseted by the WCTA jazz band! can't wait to see you there!</p>
+                <img src="Linked-Images/musicnighttracklist.png" width="100%" alt="Post Image 4">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="Linked-Images/thumbsup.png">
+                        <img src="Linked-Images/love.png">
+                        <img src="Linked-Images/clap.png">
+                        <span class="liked-users">75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="Linked-Images/User-2.png" class="post-activity-user-icon" alt="Post Activity Icon">
+                        <img src="Linked-Images/down-arrow.png" class="post-activity-arrow-icon" alt="Post Activity Icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/like.png" alt="Comment Icon">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/comment.png" alt="Comment Icon">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/share.png" alt="Comment Icon">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="Linked-Images/share.png" alt="Comment Icon">
+                        <span>Send</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!------------ Right Sidebar ------------>
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="Linked-Images/more.png" class="info-icon" alt="Info Icon">
+                <h3>Trending News</h3>
+                <a href="#">Subsanity announces new tour</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Scientists discover new plant life</a>
+                <span>19hr ago &middot; 1,552 readers</span>
+
+                <a href="#">Less work visa for US, more for Uk</a>
+                <span>1d ago &middot; 27,290 readers</span>
+
+                <a href="#">More hiring = higher confidence?</a>
+                <span>18hr ago &middot; 8,208 readers</span>
+
+                <a href="#">Gautam Adani is the world's third richest</a>
+                <span>12hr ago &middot; 4,205 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Description page &middot; &middot; &middot;
+                </small>
+                <p>This page is a replica of Linked-In. I did my best to replicate all sections and used my real Linkedin page as a reference</p>
+                <div>
+                    <img src="Linked-Images/logo copy.pngs" alt="user-1">
+                    <img src="Linked-Images/profesional.png" alt="Mi Logo">
+                </div>
+                <b>Visit my real Linked-In Below</b>
+                <a href="https://www.linkedin.com/in/isaiah-king-050618208/" class="ad-link">To LinkedIn</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="Linked-Images/logo copy.png" alt="Linkedin Logo">
+                    <p>Linkedin &#169; 2024. All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+
+    <script>
+
+        let sideActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+
+        function toggleActivity(){
+            sideActivity.classList.toggle("open-activity");
+        }
+
+        if(sideActivity.classList.contains("open-activity")){moreLink.innerHTML = "Show less <b>-</b>";}
+        else{
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    </script>
+</body>
+</html>

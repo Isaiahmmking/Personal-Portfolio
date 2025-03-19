@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Projects</title>
+    <link rel="stylesheet" href="style-educationalprojects.css">
+    <script src="https://kit.fontawesome.com/e380383ac6.js" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+  
+<!----------Header Text and buttons-->
+<div id="header">
+    <div class="container">
+        <nav>
+           <img src="Images/Logo.png" class="logo"> 
+           <ul id="sidemenu"> 
+                <li><a href="index.html">// Home</a></li>
+                <li><a href="#about">// About</a></li>
+                <li><a href="#services">// Passions</a></li>
+                <li><a href="#portfolio">// Projects</a></li>
+                <li><a href="#contact">// Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Educational Projects</h1> 
+            <p> These are some projects I have completed during my courses at SFU</p>
+        </div> 
+    </div>
+ </div>
+
+
+ 
+<!------------------ Different Projects -->
+
+
+
+<!----------------- Project 1 - I-Fallen ---------------->
+<div id="Dorm-1">
+    <div class="container">
+        <div class="row">
+          <div class="Dorm-1-col-1">
+             <img src="Images/DeltaProj.png"> <!----add image here--  --> 
+          </div>
+        <div class="Dorm-1-col-2">
+                  <h1 class="sub-title">I-Fallen</h1><!------- name of project -->
+                  <p> As a part of my Engineering, Science, and Society course at SFU, myself and a team designed a fall detection device for hospital caretakers. </p>
+                <div class="tab-titles">
+                    <p class="tab-links-p1 active-link-p1" onclick="opentab('function-p1', 1)">How it works</p>
+                    
+                </div>
+                <div class="tab-contents-p1 active-tab-p1" id="function-p1">
+                    <ul>
+                        <li><span>Design</span><br>We implemented the design using an raspberry pi pico, combined with an accellerometer / gyroscope</li>
+                        <li><span>progaming</span><br>This code implemented a bluetooth response to a phone when a desired threshold was met detected </li>
+                        <li><span>3D modelling</span><br>I led the design team in creating the shell of the device, ensuring patient safety and maximizing  </li>
+
+                    </ul>
+                </div>
+               
+                
+        </div>
+    </div>
+</div>
+</div>
+
+<!-------------------------- Project 2 ---------------------------->
+
+<div id="Dorm-2">
+    <div class="container">
+        <div class="row">
+          <div class="Dorm-2-col-1">
+
+            <h1 class="sub-title">FPGA game</h1>
+            <p> This is a reaction-based game I designed for an FPGA board in my Digital Logic and Design course
+               </p>
+          <div class="tab-titles">
+              <p class="tab-links-p2 active-link-p2" onclick="opentab('function-p2', 2)">How it works</p>
+              <p class="tab-links-p2" onclick="opentab('skills-p2', 2)">Skills</p>
+          </div>
+          <div class="tab-contents-p2 active-tab-p2" id="function-p2">
+              <ul>
+                  <li><span>VHDL code</span><br>I designed the game so that two players can compete angaist each other to see who has the fasters reaction time</li>
+                  <li><span></span><br>Each player hets a unique character and waits to see their character on a randomly generated character display</li>
+                  <li><span></span><br>when the program displays their character, the timer starts and only stops when the player reacts, whoever reacts fastest wins!</li>
+
+
+              </ul>
+          </div>
+          <div class="tab-contents-p2" id="skills-p2">
+              <ul>
+                  <li><span>Arduino IDE</span><br> This project used an FGPA DE-10 board and VHDL programming </li>
+              </ul>
+          </div>
+              
+          
+          </div>
+
+
+        <div class="Dorm-2-col-2">
+            <img src="Images/FGPA.JPG"> 
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+
+<script>
+    // code for projects display and animation
+    function opentab(tabName, project) {
+      var tabContents, tabLinks;
+    
+      switch (project) {
+        case 1:
+          tabContents = document.querySelectorAll('.tab-contents-p1');
+          tabLinks = document.querySelectorAll('.tab-links-p1');
+          break;
+        case 2:
+          tabContents = document.querySelectorAll('.tab-contents-p2');
+          tabLinks = document.querySelectorAll('.tab-links-p2');
+          break;
+        case 3:
+          tabContents = document.querySelectorAll('.tab-contents-p3');
+          tabLinks = document.querySelectorAll('.tab-links-p3');
+          break;
+        case 4:
+          tabContents = document.querySelectorAll('.tab-contents-p4');
+          tabLinks = document.querySelectorAll('.tab-links-p4');
+          break;
+        case 5:
+          tabContents = document.querySelectorAll('.tab-contents-p5');
+          tabLinks = document.querySelectorAll('.tab-links-p5');
+          break;
+      }
+    
+      tabContents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+      tabLinks.forEach(function(link) {
+        link.classList.remove('active-link-p' + project);
+      });
+    
+      var selectedContent = document.getElementById(tabName);
+      selectedContent.style.display = 'block';
+      var selectedLink = document.querySelector('.tab-links-p' + project + '[onclick="opentab(\'' + tabName + '\', ' + project + ')"]');
+      selectedLink.classList.add('active-link-p' + project);
+    }
+ </script>
+     
+    <script>
+    // code for the side menu
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+    

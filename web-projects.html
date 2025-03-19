@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Projects</title>
+    <link rel="stylesheet" href="style-web-projects.css">
+    <script src="https://kit.fontawesome.com/e380383ac6.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="Images/Logo.png" class="logo"> 
+               <ul id="sidemenu"> 
+                    
+                    <li><a href="#Web-1">// Link-Me-In</a></li>
+                    <li><a href="#Web-2">// Flying Flix</a></li>
+                    <li><a href="#Web-3">// Portfolio</a></li>
+                    
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Personal Projects</h1> 
+                <p>This section showcases a collection of personal projects I have created and programmed</p>
+            </div> 
+        </div>
+     </div>
+</body>
+
+
+
+
+<!---------------- Different Projects -------->
+<!----------------- Project 1 ---------------->
+<div id="Web-1">
+    <div class="container">
+        <div class="row">
+          <div class="Web-1-col-1">
+             <img src="Images/LinkedIn_logo_initials.jpg"> <!----add image here--  --> 
+          </div>
+        <div class="Web-1-col-2">
+                  <h1 class="sub-title">Link-Me-In</h1><!------- name of project -->
+                  <p> I created this page as a LinkedIn-inspired platform. Explore this page to learn more about me! </p>
+                  <a href="Link-me-inMain.html"> Click Me!</a>
+                <div class="tab-titles">
+                    <p class="tab-links-p1 active-link-p1" onclick="opentab('function-p1', 1)">How it works</p>
+                    <p class="tab-links-p1" onclick="opentab('skills-p1', 1)">Skills I Used</p>
+                    <p class="tab-links-p1" onclick="opentab('improvements-p1', 1)"> Product</p>
+                    
+                </div>
+                <div class="tab-contents-p1 active-tab-p1" id="function-p1">
+                    <ul>
+                        <li><span>Purpose</span><br>I developed this page to demonstrate my ability to adapt to evolving projects and enhance existing products </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents-p1" id="skills-p1">
+                    <ul>
+                        <li><span>Web Development</span><br> Using my knowledge in HTML and CSS, I used my LinkedIn page as a template and replicated many of its functionalities </li>
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents-p1" id="improvements-p1">
+                    <ul>
+                       <li><span>Product </span><br>View the product <a href = "/Link-me-In/Link-me-inMain.html" target="_blank"> here!</a></li>                     
+                    </ul>    
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<!-------------------------- Project 2 ---------------------------->
+
+
+
+
+<div id="Web-2">
+    <div class="container">
+        <div class="row">
+          <div class="Web-2-col-1">
+
+            <h1 class="sub-title">Flying-Flix BC</h1>
+            <p> As a highschool freshman, a partner and I launched a drone photography business specializing in services for realestate agents. Initially, we built the company website using WIX, but as I advanced my web development skills, I took the initiative to redesign and rebuild the website independently.</p>
+          <div class="tab-titles">
+              <p class="tab-links-p2 active-link-p2" onclick="opentab('function-p2', 2)">Improvements</p>
+              <p class="tab-links-p2" onclick="opentab('skills-p2', 2)">Skills</p>
+              <p class="tab-links-p2" onclick="opentab('improvements-p2', 2)"> Product</p>
+          </div>
+          <div class="tab-contents-p2 active-tab-p2" id="function-p2">
+              <ul>
+                  <li><span>Communication</span><br>As buisness manager, I know the importance of communication, so I designed this site with communication improvements from our old site </li>
+                  <li><span>UI</span><br>I implemented new UI to make the website look and function up to professtional standards</li>
+              </ul>
+          </div>
+          <div class="tab-contents-p2" id="skills-p2">
+              <ul>
+                  <li><span>JS</span><br> I used JavaScript to create a implement animations to improve UI</li>
+              </ul>
+          </div>
+              
+          <div class="tab-contents-p2" id="improvements-p2">
+              <ul>
+                <li><span>Product </span><br>View the site <a href = "index.html" target="_blank"> here!</a></li>                               
+              </ul>    
+          </div>
+          
+          </div>
+
+
+        <div class="Web-2-col-2">
+            <img src="Images/fusionlogo.png"> 
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+
+
+<!-------------------------- Project 3 ---------------------------->
+
+
+<div id="Web-3">
+    <div class="container">
+        <div class="row">
+          <div class="Web-3-col-1">
+             <img src="Images/bubblz.jpg"> <!----add image here-- --> 
+          </div>
+        <div class="Web-3-col-2">
+                  <h1 class="sub-title">Personal Portfolio</h1><!------- name of project -->
+                  <p> This portfolio itself is my largest, most complicated project that displays a variety of my web skills  </p>
+                <div class="tab-titles">
+                    <p class="tab-links-p3 active-link-p3" onclick="opentab('function-p3', 3)">How it works</p>
+                    <p class="tab-links-p3" onclick="opentab('improvements-p3', 3)"> Product</p>
+                    
+                </div>
+                <div class="tab-contents-p3 active-tab-p3" id="function-p3">
+                    <ul>
+                        <li><span>HTML / CSS / JS</span><br> this portfoloio mainly uses HTML and CSS to create the UI and implemented JS properties to accentuate the designs </li>
+                    </ul>
+                </div>
+                <div class="tab-contents-p3" id="improvements-p3">
+                    <ul>
+                        <li><span>Home </span><br> Go back to the main portfoliio section <a href="index.html" target="_blank"> here!</a></li>                    </ul>    
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!--------------Project 4 ------------------->
+
+<div id="Web-4">
+    <div class="container">
+        <div class="row">
+          <div class="Web-4-col-1">
+
+            <h1 class="sub-title">Flying-Flix BC</h1>
+            <p> As a highschool freshman, a partner and I launched a drone photography business specializing in services for realestate agents. Initially, we built the company website using WIX, but as I advanced my web development skills, I took the initiative to redesign and rebuild the website independently.</p>
+          <div class="tab-titles">
+              <p class="tab-links-p4 active-link-p4" onclick="opentab('function-p4', 4)">Improvements</p>
+              <p class="tab-links-p4" onclick="opentab('skills-p4', 4)">Skills</p>
+              <p class="tab-links-p4" onclick="opentab('improvements-p4', 4)"> Product</p>
+          </div>
+          <div class="tab-contents-p4 active-tab-p4" id="function-p4">
+              <ul>
+                  <li><span>Communication</span><br>As buisness manager, I know the importance of communication, so I designed this site with communication improvements from our old site </li>
+                  <li><span>UI</span><br>I implemented new UI to make the website look and function up to professtional standards</li>
+              </ul>
+          </div>
+          <div class="tab-contents-p4" id="skills-p4">
+              <ul>
+                  <li><span>JS</span><br> I used JavaScript to create a implement animations to improve UI</li>
+              </ul>
+          </div>
+              
+          <div class="tab-contents-p4" id="improvements-p4">
+              <ul>
+                <li><span>Product </span><br>View the site <a href = "index.html" target="_blank"> here!</a></li>                               
+              </ul>    
+          </div>
+          
+          </div>
+
+
+        <div class="Web-4-col-2">
+            <img src="Images/fusionlogo.png"> 
+        </div>
+
+
+    </div>
+</div>
+</div>
+<!--------------Project 5 ------------------->
+
+<div id="Web-1">
+    <div class="container">
+        <div class="row">
+          <div class="Web-5-col-1">
+             <img src="Images/LinkedIn_logo_initials.jpg"> <!----add image here--  --> 
+          </div>
+        <div class="Web-5-col-2">
+                  <h1 class="sub-title">Link-Me-In</h1><!------- name of project -->
+                  <p> I created this page as a LinkedIn-inspired platform. Explore this page to learn more about me! </p>
+                  <a href="Link-me-inMain.html"> Click Me!</a>
+                <div class="tab-titles">
+                    <p class="tab-links-p5 active-link-p5" onclick="opentab('function-p5', 5)">How it works</p>
+                    <p class="tab-links-p5" onclick="opentab('skills-p5', 5)">Skills I Used</p>
+                    <p class="tab-links-p5" onclick="opentab('improvements-p5', 5)"> Product</p>
+                    
+                </div>
+                <div class="tab-contents-p5 active-tab-p5" id="function-p5">
+                    <ul>
+                        <li><span>Purpose</span><br>I developed this page to demonstrate my ability to adapt to evolving projects and enhance existing products </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents-p5" id="skills-p5">
+                    <ul>
+                        <li><span>Web Development</span><br> Using my knowledge in HTML and CSS, I used my LinkedIn page as a template and replicated many of its functionalities </li>
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents-p5" id="improvements-p5">
+                    <ul>
+                       <li><span>Product </span><br>View the product <a href = "/Link-me-In/Link-me-inMain.html" target="_blank"> here!</a></li>                     
+                    </ul>    
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="spacer layer1"></div>
+
+
+
+
+
+
+<script>
+// code for projects display and animation
+function opentab(tabName, project) {
+  var tabContents, tabLinks;
+
+  switch (project) {
+    case 1:
+      tabContents = document.querySelectorAll('.tab-contents-p1');
+      tabLinks = document.querySelectorAll('.tab-links-p1');
+      break;
+    case 2:
+      tabContents = document.querySelectorAll('.tab-contents-p2');
+      tabLinks = document.querySelectorAll('.tab-links-p2');
+      break;
+    case 3:
+      tabContents = document.querySelectorAll('.tab-contents-p3');
+      tabLinks = document.querySelectorAll('.tab-links-p3');
+      break;
+    case 4:
+      tabContents = document.querySelectorAll('.tab-contents-p4');
+      tabLinks = document.querySelectorAll('.tab-links-p4');
+      break;
+    case 5:
+      tabContents = document.querySelectorAll('.tab-contents-p5');
+      tabLinks = document.querySelectorAll('.tab-links-p5');
+      break;
+  }
+
+  tabContents.forEach(function(content) {
+    content.style.display = 'none';
+  });
+  tabLinks.forEach(function(link) {
+    link.classList.remove('active-link-p' + project);
+  });
+
+  var selectedContent = document.getElementById(tabName);
+  selectedContent.style.display = 'block';
+  var selectedLink = document.querySelector('.tab-links-p' + project + '[onclick="opentab(\'' + tabName + '\', ' + project + ')"]');
+  selectedLink.classList.add('active-link-p' + project);
+}
+   
+
+   
+
+</script>
+
+
+
+
+
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</html>

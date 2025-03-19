@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-Me-In</title>
+    <link rel="stylesheet" href="Link-me-inMAIN.css">
+    <script src="https://kit.fontawesome.com/e380383ac6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="Link-me-in2.html" class="logo"><img src="Linked-Images/logo copy.png" alt="Linkedin Logo"></a>
+
+            <div class="search-box">
+                <img src="Linked-Images/search.png" alt="Search Icon">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="Linked-Images/home.png" alt="Home Icon"> <span>Home</span></a></li>
+                <li><a href="#"><img src="Linked-Images/network.png" alt="Network Icon"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="Linked-Images/jobs.png" alt="Jobs Icon"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="Linked-Images/message.png" alt="Messaaging Icon"> <span>Messaaging</span></a></li>
+                <li><a href="#"><img src="Linked-Images/notification.png" alt="Notifications Icon"> <span>Click photo to see more-></span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="Linked-Images/profesional.png" class="nav-profile-img" alt="User Profile 1" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!------------ Profile Drop Down Menu ------------>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="Linked-Images/profesional.png" alt="user-1">
+                    <div>
+                        <h3>Isaiah King</h3>
+                        <a href="Link-me-in2.html">Click to see generic profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/feedback.png" alt="Feedback Icon">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/setting.png" alt="Settings Icon">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/help.png" alt="Help Icon">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/display.png" alt="Display Icon">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Linked-Images/logout.png" alt="Logout Icon">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!------------ Navbar Close ------------> 
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="Linked-Images/Black Modern Personal LinkedIn Banner.png" width="100%" alt="cover pic">
+                <div class="profile-container-inner">
+                    <img src="Linked-Images/profesional.png" alt="user-1" class="profile-pic">
+                    <h1>Isaiah King</h1>
+                    <b>Student Engineer at Simon Fraser University </b>
+                    <p>Vancouver, British Columbia &middot; <a id="contact" href="#contact">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="Linked-Images/User-2.png" alt="user-2">
+                        <span>1 mutual connection: John Doe</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a class="primary-btn" href="#"><img src="Linked-Images/connect.png">Connect</a>
+                        <a href="#"><img src="Linked-Images/message.png">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>This page is a replica of Linked-In, however this is just the perspective from my profile, I also created a replica of a generic Linked-in page. To see this perspective cliclk the logo in the top left! </p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="Linked-Images/HardRock.png" alt="Microsoft Logo">
+                    <div>
+                        <h3>Lifeguard</h3>
+                        <b>Hard Rock International &middot; Part-time / Seasonal</b>
+                        <b>May 2023 - Aug 2023 &middot; 4 mos</b>
+                        <p>Las Vegas, Nevada, United States</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="Linked-Images/MGMlogo.jpg" alt="MGM Logo">
+                    <div>Lifeguard </h3>
+                        <b>MGM Resorts International &middot; Part-time / Seasonal</b>
+                        <b>May 2022 - Aug 2022 &middot; 4 mos</b>
+                        <p>Las Vegas, Nevada, United States </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="Linked-Images/MGMlogo.jpg" alt="Google Logo">
+                    <div>
+                        <h3>Lifeguard</h3>
+                        <b>MGM Resorts International &middot; Part-time / Seasonal</b>
+                        <b>May 2022 - Aug 2022 &middot; 4 mos</b>
+                        <p>Las Vegas, Nevada, United States </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <hr>
+                <a class="experience-link" href="#">Show all 7 experiences <img src="Linked-Images/right-arrow.png" alt="Right Arrow"></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="Linked-Images/SFU.png" alt="SFU logo">
+                    <diV>
+                        <h3>Simon Fraser University</h3>
+                        <b>Current Student</b>
+                        <b>Sept 2023 - expected June 2027 </b>
+                        <p> Activities and societies: Jazz Band, Varsity Wrestling, Grappling club , Rocketry team</p>
+                        <hr>
+                    </diV>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="Linked-Images/WCTA.png" alt="WCTA logo">
+                    <diV>
+                        <h3>West Career and Technical Academy</h3>
+                        <b>Engineering</b>
+                        <b>2020 - 2023</b>
+                        <p> Activities and societies: jazz band club leader, guitar and bass club leader, varsity wrestling, We The People member 
+                        </p>
+                        <hr>
+                    </diV>
+                </div>
+                
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Web Design</a>
+                <a href="#" class="skills-btn">Development</a>
+                <a href="#" class="skills-btn">Communication</a>
+                <a href="#" class="skills-btn">UI/UX</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">JavaScript</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">Entrepreneurship</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                
+            </div>
+        </div>
+
+        <!------------ Profile Sidebar ------------> 
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Description page &middot; &middot; &middot;
+                </small>
+                <p>This page is a replica of Linked-In. I did my best to replicate all sections and used my real Linkedin page as a reference</p>
+                <div>
+                    <img src="Linked-Images/logo copy.png" alt="user-1">
+                    <img src="Linked-Images/profesional.png" alt="Mi Logo">
+                </div>
+                <b>Visit my real Linked-In Below</b>
+                <a href="https://www.linkedin.com/in/isaiah-king-050618208/" class="ad-link">To LinkedIn</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="Linked-Images/User-3.png" alt="user-3">
+                    <div>
+                        <h2>John Doe</h2>
+                        <p>Head of Marketing at BuisnessXYZ</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="Linked-Images/User 4.png"" alt="user-3">
+                    <div>
+                        <h2>Jane Doe</h2>
+                        <p>Head of Advertising at BuisnessXYZ</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="Linked-Images/User-1.png" alt="user-5">
+                    <div>
+                        <h2>Steve Doe</h2>
+                        <p>Head of Accounting at BuisnessXYZ</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="Linked-Images/User-2.png"" alt="user-2">
+                    <div>
+                        <h2>Bob Doe</h2>
+                        <p>Head of Legal at BuisnessXYZ</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="/Link-Me-IMG/User-1.png"" alt="user-1">
+                    <div>
+                        <h2>Tom Doe</h2>
+                        <p>CEO at BuisnessXYZ</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="/Link-Me-IMG/logo.png" alt="LinkedIn Logo">
+                <p>Linkedin &#169; 2024. All right reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+</script>
+</body>
+</html>
